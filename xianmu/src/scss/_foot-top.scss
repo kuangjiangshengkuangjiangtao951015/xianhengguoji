@@ -1,0 +1,73 @@
+@charset "utf-8";
+ /*尾部上面的li页面*/
+#pick{
+  width: 100%;
+  height: 202px;
+  .pick_a{
+    width: 1190px;
+    height: 202px;
+    background: #fafafa;
+    margin: auto;
+    text-align: center;
+
+    li{
+      float: left;
+      width: 137px;
+      height: 140px;
+      background: #fafafa;
+      border-right: 1px solid #ccc;
+      margin-top: 30px
+
+    }
+
+  }
+}
+.Pick_li>h4{
+    font-size: 14px;
+    font-family:" 微软雅黑";
+    margin-bottom: 5px;
+}
+.pick_a a{
+  display: block;
+  width: 100%;
+  line-height: 20px;
+  font-size: 13px;
+  color: #666;
+}
+.pick_a a:hover{
+  color: red;
+}
+#pick .pick_a  .li_right {
+  width: 300px;
+
+}
+.li_right .foot_img{
+  margin: 20px 0 0 20px;
+  float: left;
+  width: 40px;
+  height: 60px;
+
+}
+.li_right .shijian{
+  margin: 20px 0 ;
+  float: left;
+  width: 180px;
+  height: 100px;
+
+  h4{
+    font-size: 14px;
+    font-family:" 微软雅黑";
+    color: red;
+  }
+  span{
+    margin-top: 15px;
+    color: #666;
+  }
+}
+.foot_img_a{
+   background: url("../img/font_4.png")no-repeat;
+}
+.li_right .foot_img_b{
+  width: 80px;
+  background: url("../img/font_3.png")no-repeat;
+}

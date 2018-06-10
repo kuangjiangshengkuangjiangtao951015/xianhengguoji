@@ -1,0 +1,320 @@
+@charset "utf-8";
+/*注册页面*/
+
+#kjtfay{
+  width: 100%;
+
+  .page{
+    width: 950px;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 80px;
+    padding: 5px 20px 20px 20px;
+    margin: 5px 0;
+    font-size: 14px;
+    margin: auto;
+    background: #fff;
+
+  }
+}
+.name_h4{
+  margin-left: 100px;
+  width: 750px;
+  height: 35px;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  text-indent: 15px;
+   H3{
+     float: left;
+
+     border: 1px solid #ccc;
+    border-top: 3px solid red;
+     height: 29px;
+     line-height: 29px;
+     padding:0 7px 2px 0;
+     margin: 0 1px 0 100px;
+     border-bottom: none;
+   }
+  h4{
+    margin-top: 4px;
+    float: left;
+    border: 1px solid #ccc;
+    padding:0 7px 2px 0;
+    height: 29px;
+    line-height: 40px;
+  }
+}
+#form_mian{
+  margin-top: 10px;
+  margin-left: 200px;
+  width: 590px;
+
+
+  overflow: hidden;
+  span{
+    float: left;
+    margin-left: 10px;
+    line-height: 42px;
+  }
+  b{
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #666;
+    margin-left: 20px;
+    font-weight: 100;
+    em{
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      font-size: 18px;
+      color: red;
+    }
+
+  }
+  input{
+    text-indent: 10px;
+    width: 263px;
+    height: 39px;
+    border: none;
+    outline: medium;
+  }
+
+}
+.form_a{//用户名
+   overflow: hidden;
+   .form_left_a{
+     position: relative;
+     float: left;
+     width: 385px;
+     height: 42px;
+     border: 1px solid #ccc;
+     line-height: 42px;
+     margin-bottom: 15px;
+     i{
+       margin-left: 5px;
+       background: url("../img/loginico.png")no-repeat 0 -283px;
+     }
+   }
+
+}
+.form_b{//设置密码
+  overflow: hidden;
+   position: relative;
+  .form_left_b{
+    border: 1px solid red;
+    position: relative;
+    float: left;
+    width: 385px;
+    height: 42px;
+    border: 1px solid #ccc;
+    line-height: 42px;
+    margin-bottom: 5px;
+    i{
+      margin-left: 5px;
+      background: url("../img/loginico.png")no-repeat 0 -235px;
+    }
+
+    }
+}
+.safety{//安全强度
+   width: 160px;
+   font-size: 13px;
+   color: #666;
+   margin-left: 220px;
+   margin-bottom: 15px;
+
+  >a{
+   background: #ccc;
+    padding: 0 10px;
+    color: #fff;
+    border-right: 1px solid #fff;
+  }
+  >i{
+    background: #ccc;
+    padding: 0 10px;
+    color: #fff;
+    border-right: 1px solid #fff;
+  }
+  >strong{
+    background: #ccc;
+    padding: 0 10px;
+    color: #fff;
+  }
+}
+.form_c{//设置密码
+  overflow: hidden;
+  position: relative;
+  .form_left_b{
+    border: 1px solid red;
+    position: relative;
+    float: left;
+    width: 385px;
+    height: 42px;
+    border: 1px solid #ccc;
+    line-height: 42px;
+    margin-bottom: 15px;
+    i{
+      margin-left: 5px;
+      background: url("../img/loginico.png")no-repeat 0 -235px;
+    }
+
+  }
+}
+.form_d {
+  overflow: hidden;
+  position: relative;
+  .form_left_b {
+    border: 1px solid red;
+    float: left;
+    width: 385px;
+    height: 42px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    line-height: 42px;
+    select{
+      width: 263px;
+      height: 39px;
+      border: none;
+      outline: medium;
+      text-indent: 15px;
+    }
+
+  }
+}
+
+.form_e{
+  overflow: hidden;
+  position: relative;
+  .form_left_b {
+    border: 1px solid red;
+    float: left;
+    width: 385px;
+    height: 42px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    line-height: 42px;
+    select{
+      width: 263px;
+      height: 39px;
+      border: none;
+      outline: medium;
+      text-indent: 15px;
+    }
+
+  }
+}
+.form_f{//邮箱
+  overflow: hidden;
+  .form_left_a{
+    position: relative;
+    float: left;
+    width: 385px;
+    height: 42px;
+    border: 1px solid #ccc;
+    line-height: 42px;
+    margin-bottom: 15px;
+    i{
+      margin-left: 5px;
+      background: url("../img/loginico.png")no-repeat 0 -283px;
+    }
+  }
+
+}
+
+.form_g{//手机号
+  overflow: hidden;
+  .form_left_a{
+    position: relative;
+    float: left;
+    width: 385px;
+    height: 42px;
+    border: 1px solid #ccc;
+    line-height: 42px;
+    margin-bottom: 15px;
+    i{
+      margin-left: 5px;
+      background: url("../img/loginico.png")no-repeat 0 -283px;
+    }
+  }
+}
+
+#form_mian .form_h{
+
+  margin-bottom: 15px;
+  overflow: hidden;
+  >.yzm_a{
+    float: left;
+    width: 172px;
+    border: 1px solid #CCCCCC;
+    margin-right: 15px;
+    >input{
+      width: 172px;
+    }
+
+  }
+  >.yzm_b{
+    float: left;
+    width: 142px;
+    line-height: 42px;
+    height: 42px;
+    background: #666666;
+    text-align: center;
+  }
+}
+#form_mian .form_i{
+
+  margin-bottom: 15px;
+  overflow: hidden;
+  >.yzm_a{
+    float: left;
+    width: 172px;
+    border: 1px solid #CCCCCC;
+    margin-right: 15px;
+    >input{
+      width: 172px;
+    }
+
+  }
+  >.yzm_b{
+    float: left;
+    width: 142px;
+    line-height: 42px;
+    height: 42px;
+    background: #ccc;
+    color: red;
+    text-align: center;
+  }
+}
+#form_mian .form_j{
+  font-size: 14px;
+   >input{
+      width: 20px;
+      height: 15px;
+   }
+  >a{
+    color: red;
+  }
+}
+.form_k{
+
+
+  >a{
+    text-align: center;
+    font-size: 20px;
+    line-height: 42px;
+    width: 385px;
+    height: 42px;
+    display: block;
+    background: #e50012;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+}
+.form_m{
+  overflow: hidden;
+  margin-bottom: 30px;
+  >a{
+    color: red;
+
+
+  }
+}
