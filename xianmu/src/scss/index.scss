@@ -24,7 +24,7 @@
 
   }
 }
-#hot h3{/*热门品牌标题*/
+#mian h3{/*热门品牌标题*/
   padding-top: 10px;
   border-bottom: 3px solid red;
   color: red;
@@ -90,14 +90,14 @@
 #mian{
   width: 100%;
   .mian_zhong{
-    width: 1190px;
+    width: 1198px;
 
     margin: auto;
     background: #fff;
   }
 }
 .mian_ff{
-   width: 1188px;
+   width: 1198px;
   height: 326px;
   border: 1px solid #666;
   margin-bottom: 5px;
@@ -106,7 +106,7 @@
 .mian_box1{
  float: left;
   width: 340px;
-  height: 326px;
+  height: 327px;
   position: relative;
   border: 1px solid #666;
   border-right:0;
@@ -114,7 +114,7 @@
 }
 .mian_box2{
   float: right;
-  width: 838px;
+  width: 856px;
   height: 326px;
   border: 1px solid #666;
   border-right:0;
@@ -147,10 +147,14 @@
 }
 .mian_box2>a{
   display: inline-block;
-  width: 275px;
+  width: 281px;
   height: 162px;
   border-right: 1px solid #666;
   border-bottom: 1px solid #666;
+  img{
+    display: block;
+    width: 280px;
+  }
 }
 
 

@@ -130,12 +130,19 @@ a, li {
     .form form input {
       width: 466px;
       height: 30px;
-      border: none; }
+      border: none;
+      outline: medium;
+      text-indent: 15px; }
     .form form button {
       width: 81px;
       height: 30px;
       background: red;
-      border: none; }
+      border: none;
+      color: #fff;
+      outline: medium; }
+
+button:hover {
+  cursor: pointer; }
 
 .txt {
   font-size: 12px;
@@ -146,8 +153,8 @@ a, li {
     color: #CCCCCC; }
 
 .shopping {
-  width: 150px;
-  height: 40px;
+  width: 130px;
+  height: 37px;
   position: absolute;
   right: 20px;
   top: 15px;
@@ -165,14 +172,23 @@ a, li {
 
 .shopping_kong {
   position: absolute;
-  right: 20px;
-  top: 50px;
+  right: -1px;
+  top: 36px;
   width: 350px;
-  height: 70px;
+  height: 65px;
   background: #fff;
   display: none;
-  border: 1px solid red;
+  border: 1px solid #ccc;
   color: #666; }
+
+.shopping_zhe {
+  position: absolute;
+  right: 0px;
+  top: -3px;
+  display: inline-block;
+  width: 130px;
+  height: 5px;
+  background: #fff; }
 
 .shopping:hover .shopping_kong {
   display: block; }
@@ -181,7 +197,8 @@ a, li {
 .header_below {
   width: 100%;
   height: 43px;
-  background: #fff; }
+  background: #fff;
+  overflow: hidden; }
 
 .nav {
   width: 1190px;
@@ -190,7 +207,9 @@ a, li {
   margin: auto;
   border-bottom: 2px solid red; }
   .nav > ol {
-    line-height: 43px; }
+    overflow: hidden;
+    line-height: 43px;
+    border-bottom: 3px solid red; }
     .nav > ol > li {
       float: left;
       text-align: center; }
@@ -341,6 +360,9 @@ a, li {
     border-bottom: 1px solid #ccc;
     margin-bottom: 5px;
     color: #666; }
+
+.dizhi:hover {
+  color: red; }
 
 .refeet {
   width: 100%;
@@ -530,14 +552,30 @@ a, li {
     padding: 15px 50px;
     background: url("../img/qqfx1.png") no-repeat 10px; }
   .newt_c > i {
+    font-style: normal;
+    font-weight: 800;
     padding: 15px 50px;
     background: url("../img/wbfx1.png") no-repeat 10px; }
   .newt_c > em {
+    font-style: normal;
+    font-weight: 800;
     padding: 15px 50px;
     background: url("../img/dbfx1.png") no-repeat 10px; }
   .newt_c > strong {
     padding: 15px 50px;
     background: url("../img/wxfx1.png") no-repeat 10px; }
+
+.newt_c em:hover {
+  color: red; }
+
+.newt_c strong:hover {
+  color: red; }
+
+.newt_c i:hover {
+  color: red; }
+
+.newt_c b:hover {
+  color: red; }
 
 .price_newt {
   margin: 20px 0 0 15px;
@@ -1080,7 +1118,7 @@ a, li {
     height: 253px;
     margin: auto; }
 
-#hot h3 {
+#mian h3 {
   /*热门品牌标题*/
   padding-top: 10px;
   border-bottom: 3px solid red;
@@ -1138,12 +1176,12 @@ a, li {
 #mian {
   width: 100%; }
   #mian .mian_zhong {
-    width: 1190px;
+    width: 1198px;
     margin: auto;
     background: #fff; }
 
 .mian_ff {
-  width: 1188px;
+  width: 1198px;
   height: 326px;
   border: 1px solid #666;
   margin-bottom: 5px;
@@ -1152,7 +1190,7 @@ a, li {
 .mian_box1 {
   float: left;
   width: 340px;
-  height: 326px;
+  height: 327px;
   position: relative;
   border: 1px solid #666;
   border-right: 0;
@@ -1160,7 +1198,7 @@ a, li {
 
 .mian_box2 {
   float: right;
-  width: 838px;
+  width: 856px;
   height: 326px;
   border: 1px solid #666;
   border-right: 0;
@@ -1188,9 +1226,12 @@ a, li {
 
 .mian_box2 > a {
   display: inline-block;
-  width: 275px;
+  width: 281px;
   height: 162px;
   border-right: 1px solid #666;
   border-bottom: 1px solid #666; }
+  .mian_box2 > a img {
+    display: block;
+    width: 280px; }
 
 /*# sourceMappingURL=index.css.map */

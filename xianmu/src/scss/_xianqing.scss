@@ -15,6 +15,9 @@
 
   }
 }
+.dizhi:hover{
+  color: red;
+}
 .refeet{
   width: 100%;
 
@@ -235,12 +238,17 @@
 
     padding:15px 50px;
     background:url("../img/qqfx1.png")no-repeat 10px;
+
   }
   >i{
+    font-style: normal;
+    font-weight: 800;
     padding:15px 50px;
     background:url("../img/wbfx1.png") no-repeat 10px;
   }
   >em{
+    font-style: normal;
+    font-weight: 800;
     padding:15px 50px;
     background:url("../img/dbfx1.png") no-repeat 10px;
   }
@@ -249,6 +257,20 @@
     background:url("../img/wxfx1.png") no-repeat 10px;
   }
 }
+.newt_c em:hover{
+   color: red;
+}
+.newt_c strong:hover{
+  color: red;
+}
+.newt_c i:hover{
+  color: red;
+}
+.newt_c b:hover{
+  color: red;
+}
+
+
 .price_newt{
   margin: 20px 0 0 15px;
   border-radius: 10%;

@@ -32,6 +32,8 @@
       width: 466px;
       height: 30px;
       border: none;
+      outline: medium;
+      text-indent: 15px;
 
     }
     button{
@@ -39,8 +41,13 @@
       height: 30px;
       background: red;
       border: none;
+      color: #fff;
+      outline: medium;
     }
   }
+}
+button:hover{
+  cursor: pointer;
 }
 .txt{
   font-size: 12px;
@@ -52,8 +59,8 @@
   }
 }
 .shopping{
-  width: 150px;
-  height:40px;
+  width: 130px;
+  height:37px;
   position: absolute;
   right: 20px;
   top: 15px;
@@ -74,15 +81,24 @@
 }
 .shopping_kong{
   position: absolute;
-  right: 20px;
-  top: 50px;
+  right: -1px;
+  top: 36px;
   width: 350px;
-  height: 70px;
+  height: 65px;
   background: #fff;
-  display: none;
-  border: 1px solid red;
+ display: none;
+  border: 1px solid #ccc;
   color: #666;
 
+}
+.shopping_zhe{
+  position: absolute;
+  right: 0px;
+  top: -3px;
+  display: inline-block;
+  width: 130px;
+  height: 5px;
+  background: #fff;
 }
 
 .shopping:hover .shopping_kong{
