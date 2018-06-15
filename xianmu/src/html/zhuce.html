@@ -15,7 +15,7 @@
         <ul class="atu_right">
             <li>欢迎光临咸亨国际商城</li>
             <li>
-                <a href="#" style="color: red">登录</a>
+                <a href="dengl.html" style="color: red">登录</a>
                 <a href="#">注册</a>
             </li>
             <li>
@@ -34,18 +34,18 @@
           <h3>用户会员注册</h3>
           <h4>供应商注册</h4>
       </div>
-       <form id="form_mian">
+       <form id="form_mian" action="../../php/zhuc.php" method="post">
            <!--用户名-->
            <div class="form_a">
                <div class="form_left_a">
-               <b><em>*</em>用户名　:  </b><input type="text" placeholder="4-20个汉字.字母。数字'_'组合"/><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+               <b><em>*</em>用户名　:  </b><input type="text" placeholder="4-20个汉字.字母。数字'_'组合" class="ustname" name="ustname"/><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
               </div>
                <span></span>
            </div>
            <!--密码-->
            <div class="form_b">
                <div class="form_left_b">
-                   <b><em>*</em>设置密码:  </b><input type="text" placeholder="4-20个汉字.字母。数字'_'组合"/><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                   <b><em>*</em>设置密码:  </b><input type="text" placeholder="6-20个字母。数字'_'组合" class="pass" name="pass"/><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
                </div>
                <span></span>
 
@@ -54,7 +54,7 @@
            <!--确认密码-->
            <div class="form_c">
                <div class="form_left_b">
-                   <b><em>*</em>确认密码:  </b><input type="text" placeholder="请再次输入密码"/><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                   <b><em>*</em>确认密码:  </b><input type="text" placeholder="请再次输入密码" class="passaa"/><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
                </div>
                <span></span>
            </div>
@@ -102,7 +102,7 @@
            <!--邮箱-->
            <div class="form_f">
                    <div class="form_left_a">
-                       <b><em>*</em>邮　　箱:  </b><input type="text" placeholder="请输入邮箱地址"/><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                       <b><em>*</em>邮　　箱:  </b><input type="text" placeholder="请输入邮箱地址" class="email" name="email"/><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
                    </div>
                    <span></span>
 
@@ -110,7 +110,7 @@
            <!--手机号-->
            <div class="form_g">
                <div class="form_left_a">
-                       <b><em>*</em>手机号　:  </b><input type="text" placeholder="请输入手机号码"/><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                       <b><em>*</em>手机号　:  </b><input type="text" placeholder="请输入手机号码" class='phone'/><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
                    </div>
                    <span></span>
 
@@ -119,21 +119,21 @@
 
            <div class="form_h">　
            　　　<div class="yzm_a"><input type="text" placeholder="请输入验证码" class="yzm_aa"></div>
-                <div class="yzm_b">15S4A2</div>
+                <div class="yzm_b">A8g5</div>
 
            </div>
 
            <div class="form_i">
                　<div class="yzm_a"><input type="text" placeholder="请输入短信验证码" class="yzm_aa"></div>
-               <div class="yzm_b">获取短信验证码</div>
+               <div class="yzm_bb">获取短信验证码</div>
            </div>
 
            <div class="form_j">
                <input type="checkbox">我已阅读并同意 <a href="#">《咸亨国际商城用户注册协议》</a>
            </div>
 
-           <div class="form_k"><a href="#">立即提交</a></div>
-           <div class="form_m">我已有咸亨国际商城帐号<a href="http://localhost:63342/www/suib/zijide/da1/scss/dengl.html?_ijt=tgo775d69bbsqq5c1f07s2aro4">立即登陆</a></div>
+           <div class="form_k"><input type="submit" value="立即提交" class="form_submit" name="submit"></div>
+           <div class="form_m">我已有咸亨国际商城帐号<a href="dengl.html">立即登陆</a></div>
 
        </form>
    </div>
@@ -198,26 +198,35 @@
 </div>
 <div id="stairs_right">
     <ul>
-        <li>
-            <div class="QQ">
-                <img src="../img/side_icon04.gif">
-            </div>
+        <li >
+            <a href="#" class="QQa">
+                <div >
+                    <img src="../img/side_icon04.gif">
+                    <!--<span>客户一</span>-->
+                    客户一热线
+                </div>
+            </a>
         </li>
-        <li>
-            <div class="">
-                <img src="../img/side_icon04.gif">
-            </div>
-        </li>
-        <li>
-            <div class="">
-                <img src="../img/side_icon06.png">
-            </div>
-        </li>
-        <li>
-            <div class="">
-                <img src="../img/side_icon05.png">
+        <br><br><br>
 
-            </div>
+
+        <li>
+            <a href="#">
+                <div class="weixin">
+                    <img src="../img/side_icon06.png">
+                    <img src="../img/shared_erweima.jpg" class="erweima"/>
+                </div>
+            </a>
+        </li>
+        <br><br><br>
+        <li class="huidaodingbu">
+            <a href="#">
+                <div class="">
+                    <img src="../img/side_icon05.png">
+                    <span></span>
+
+                </div>
+            </a>
         </li>
     </ul>
 </div>
@@ -226,6 +235,8 @@
     <img src="../img/qqq.bmp" />
 </div>
 
-
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/zhuc.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
 </body>
 </html>

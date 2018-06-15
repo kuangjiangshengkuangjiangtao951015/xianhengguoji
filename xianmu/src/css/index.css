@@ -130,12 +130,19 @@ a, li {
     .form form input {
       width: 466px;
       height: 30px;
-      border: none; }
+      border: none;
+      outline: medium;
+      text-indent: 15px; }
     .form form button {
       width: 81px;
       height: 30px;
       background: red;
-      border: none; }
+      border: none;
+      color: #fff;
+      outline: medium; }
+
+button:hover {
+  cursor: pointer; }
 
 .txt {
   font-size: 12px;
@@ -146,8 +153,8 @@ a, li {
     color: #CCCCCC; }
 
 .shopping {
-  width: 150px;
-  height: 40px;
+  width: 130px;
+  height: 37px;
   position: absolute;
   right: 20px;
   top: 15px;
@@ -165,14 +172,23 @@ a, li {
 
 .shopping_kong {
   position: absolute;
-  right: 20px;
-  top: 50px;
+  right: -1px;
+  top: 36px;
   width: 350px;
-  height: 70px;
+  height: 65px;
   background: #fff;
   display: none;
-  border: 1px solid red;
+  border: 1px solid #ccc;
   color: #666; }
+
+.shopping_zhe {
+  position: absolute;
+  right: 0px;
+  top: -3px;
+  display: inline-block;
+  width: 130px;
+  height: 5px;
+  background: #fff; }
 
 .shopping:hover .shopping_kong {
   display: block; }
@@ -181,7 +197,8 @@ a, li {
 .header_below {
   width: 100%;
   height: 43px;
-  background: #fff; }
+  background: #fff;
+  overflow: hidden; }
 
 .nav {
   width: 1190px;
@@ -190,7 +207,9 @@ a, li {
   margin: auto;
   border-bottom: 2px solid red; }
   .nav > ol {
-    line-height: 43px; }
+    overflow: hidden;
+    line-height: 43px;
+    border-bottom: 3px solid red; }
     .nav > ol > li {
       float: left;
       text-align: center; }
@@ -212,21 +231,6 @@ a, li {
 .nav .nav_da i {
   background: url("../img/new.gif") no-repeat center;
   margin: 0 5px; }
-
-.nav_ali {
-  background: #CCCCCC;
-  text-align: left;
-  text-indent: 10px;
-  opacity: 0.7;
-  font-size: 14px;
-  position: relative;
-  z-index: 5555; }
-
-.nav_ali > li:hover {
-  color: red;
-  text-indent: 20px;
-  background: #666666;
-  transition: all 1s; }
 
 .nav > ol > li > a:hover {
   color: #ff0099; }
@@ -277,13 +281,35 @@ a, li {
   position: relative; }
 
 .luenimg {
+  position: absolute;
   width: 100%;
   height: 515px;
-  margin: auto; }
+  margin: auto;
+  overflow: hidden; }
 
 .luenimg img {
   width: 100%;
   height: 515px; }
+
+.nav_ali {
+  background: #ccc;
+  text-align: left;
+  text-indent: 10px;
+  opacity: 0.7;
+  font-size: 14px;
+  line-height: 43px;
+  width: 240px;
+  height: 515px;
+  color: #000;
+  position: absolute;
+  top: 0;
+  left: 37px; }
+
+.nav_ali > li:hover {
+  color: red;
+  text-indent: 20px;
+  background: #666666;
+  transition: all 1s; }
 
 #luenbo_img ol {
   position: absolute;
@@ -295,9 +321,11 @@ a, li {
     width: 20px;
     height: 20px;
     margin-right: 8px;
+    cursor: pointer;
     /*border: 1px solid red;*/
     border-radius: 50%;
-    background: #666666; }
+    background: #666666;
+    opacity: 0.8; }
 
 #luenbo_img ol .se {
   background: #ffa340; }
@@ -305,30 +333,62 @@ a, li {
 /*轮播图*/
 #stairs_right {
   position: fixed;
-  width: 54px;
   right: 0px;
   top: 60%;
   z-index: 100;
-  background: #666; }
-  #stairs_right ul li {
+  width: 54px;
+  text-align: right; }
+  #stairs_right li {
+    position: absolute;
+    right: 0;
+    border-bottom: 1px solid #ccc;
+    background: #666;
+    opacity: 0.8;
+    width: 50px;
+    height: 54px;
+    text-align: right; }
+  #stairs_right .weixin {
+    position: relative; }
+  #stairs_right .erweima {
+    visibility: hidden;
+    position: absolute;
+    left: -151px;
+    top: -71px;
+    display: inline-block;
+    width: 150px;
+    height: 150px; }
+  #stairs_right .weixin:hover .erweima {
+    visibility: visible;
+    opacity: 1; }
+  #stairs_right .QQa {
+    overflow: hidden;
     width: 54px;
     height: 54px;
-    border-bottom: 1px solid #999;
-    opacity: 0.5; }
+    position: relative;
+    line-height: 54px;
+    color: #fff; }
+    #stairs_right .QQa img {
+      float: left; }
+
+.huidaodingbu {
+  display: none; }
 
 /*右边的楼梯*/
 #stairs_left {
   position: fixed;
-  left: 50%;
-  margin-left: -630px;
-  top: 160px; }
+  left: 2px;
+  top: 160px;
+  display: none; }
   #stairs_left ul li {
     line-height: 30px;
-    border-bottom: 2px dotted #abcdef; }
-    #stairs_left ul li a {
-      display: block;
-      padding-bottom: 3px;
-      color: #abcdef; }
+    border-bottom: 1px dotted #666;
+    color: #666; }
+
+.yanse {
+  background: red; }
+
+#stairs_left li:hover {
+  background: red; }
 
 /*左边的楼梯*/
 .jiesuao {
@@ -341,6 +401,9 @@ a, li {
     border-bottom: 1px solid #ccc;
     margin-bottom: 5px;
     color: #666; }
+
+.dizhi:hover {
+  color: red; }
 
 .refeet {
   width: 100%;
@@ -530,14 +593,30 @@ a, li {
     padding: 15px 50px;
     background: url("../img/qqfx1.png") no-repeat 10px; }
   .newt_c > i {
+    font-style: normal;
+    font-weight: 800;
     padding: 15px 50px;
     background: url("../img/wbfx1.png") no-repeat 10px; }
   .newt_c > em {
+    font-style: normal;
+    font-weight: 800;
     padding: 15px 50px;
     background: url("../img/dbfx1.png") no-repeat 10px; }
   .newt_c > strong {
     padding: 15px 50px;
     background: url("../img/wxfx1.png") no-repeat 10px; }
+
+.newt_c em:hover {
+  color: red; }
+
+.newt_c strong:hover {
+  color: red; }
+
+.newt_c i:hover {
+  color: red; }
+
+.newt_c b:hover {
+  color: red; }
 
 .price_newt {
   margin: 20px 0 0 15px;
@@ -714,12 +793,18 @@ a, li {
   text-align: center;
   line-height: 46px; }
 
-.but_a a {
+.but_a .submit_dengl {
   display: block;
   background: red;
   font-size: 20px;
   color: #fff;
-  font-family: "微软雅黑"; }
+  font-family: "微软雅黑";
+  width: 320px;
+  height: 46px;
+  border: none;
+  margin: 15px 0 0 0px;
+  text-align: center;
+  line-height: 46px; }
 
 .but_b a {
   display: block;
@@ -1016,13 +1101,16 @@ a, li {
     margin-right: 15px; }
     #form_mian .form_h > .yzm_a > input {
       width: 172px; }
-  #form_mian .form_h > .yzm_b {
-    float: left;
-    width: 142px;
-    line-height: 42px;
-    height: 42px;
-    background: #666666;
-    text-align: center; }
+
+.form_h > .yzm_b {
+  float: left;
+  width: 142px;
+  line-height: 42px;
+  height: 42px;
+  background: #CCFF99;
+  text-align: center;
+  font-size: 30px;
+  font-style: italic; }
 
 #form_mian .form_i {
   margin-bottom: 15px;
@@ -1034,7 +1122,7 @@ a, li {
     margin-right: 15px; }
     #form_mian .form_i > .yzm_a > input {
       width: 172px; }
-  #form_mian .form_i > .yzm_b {
+  #form_mian .form_i > .yzm_bb {
     float: left;
     width: 142px;
     line-height: 42px;
@@ -1051,14 +1139,30 @@ a, li {
   #form_mian .form_j > a {
     color: red; }
 
-.form_k > a {
+.form_k > .form_submit {
+  width: 385px;
+  height: 42px;
+  background: #e50012;
   text-align: center;
   font-size: 20px;
   line-height: 42px;
   width: 385px;
   height: 42px;
   display: block;
+  color: #fff;
+  margin-bottom: 10px; }
+
+#form_mian .form_k .form_submit {
+  width: 385px;
+  height: 42px;
   background: #e50012;
+  text-align: center;
+  font-size: 20px;
+  line-height: 42px;
+  width: 385px;
+  height: 42px;
+  display: block;
+  cursor: pointer;
   color: #fff;
   margin-bottom: 10px; }
 
@@ -1069,6 +1173,40 @@ a, li {
     color: red; }
 
 /*注册页面*/
+.not {
+  width: 100%; }
+  .not .not_ceng {
+    width: 1000px;
+    height: 85px;
+    margin: 0 auto;
+    background: #66ff66; }
+
+.not_logo {
+  float: left;
+  margin: 15px 0 0 -100px; }
+
+.not_span {
+  float: right; }
+  .not_span b {
+    margin-top: 20px;
+    display: block;
+    width: 675px;
+    height: 20px;
+    background: url("../img/step_2.png"); }
+  .not_span span {
+    float: left;
+    display: block;
+    width: 225px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    font-family: '微软雅黑'; }
+
+.mei_deng {
+  margin-top: 10px; }
+
+/*购物车页面*/
 /*热门品牌*/
 #hot {
   /*热门品牌大盒子*/
@@ -1078,9 +1216,10 @@ a, li {
   #hot .hot_a {
     width: 1190px;
     height: 253px;
-    margin: auto; }
+    margin: auto;
+    overflow: hidden; }
 
-#hot h3 {
+#mian h3 {
   /*热门品牌标题*/
   padding-top: 10px;
   border-bottom: 3px solid red;
@@ -1091,31 +1230,44 @@ a, li {
   height: 213px;
   border: 1px solid #ccc;
   border-top: none;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
   .hot_ceng .hot_boxa {
     width: 1920px;
     height: 213px;
     background: #fff;
     position: absolute; }
+    .hot_ceng .hot_boxa ul {
+      overflow: hidden; }
     .hot_ceng .hot_boxa ul > li {
-      margin: 8px 10px;
+      margin: 5px 10px;
       width: 140px;
-      height: 55px;
-      text-align: center;
-      float: left; }
+      height: 60px;
+      float: left;
+      vertical-align: bottom;
+      cursor: pointer; }
+  .hot_ceng .hot_boxa ul li:hover {
+    vertical-align: top;
+    box-shadow: 0 10px 10px #666666;
+    width: 140px; }
   .hot_ceng .hot_boxb {
     width: 1920px;
     height: 213px;
     background: #fff;
     position: absolute;
-    left: 1192px; }
+    left: 1192px;
+    /*visibility: hidden;*/ }
     .hot_ceng .hot_boxb ul > li {
       margin: 8px 10px;
       width: 140px;
       height: 55px;
       text-align: center;
-      float: left; }
+      float: left;
+      cursor: pointer; }
+
+.hot_boxb ul li:hover {
+  vertical-align: top;
+  box-shadow: 0 10px 10px #666666;
+  width: 140px; }
 
 .si_img {
   /*流动图下面的四张图*/
@@ -1138,12 +1290,12 @@ a, li {
 #mian {
   width: 100%; }
   #mian .mian_zhong {
-    width: 1190px;
+    width: 1198px;
     margin: auto;
     background: #fff; }
 
 .mian_ff {
-  width: 1188px;
+  width: 1198px;
   height: 326px;
   border: 1px solid #666;
   margin-bottom: 5px;
@@ -1152,19 +1304,22 @@ a, li {
 .mian_box1 {
   float: left;
   width: 340px;
-  height: 326px;
+  height: 327px;
   position: relative;
-  border: 1px solid #666;
-  border-right: 0;
+  border-right: 1px solid #ccc;
   border-bottom: 0px; }
 
 .mian_box2 {
   float: right;
-  width: 838px;
+  width: 856px;
   height: 326px;
-  border: 1px solid #666;
-  border-right: 0;
-  border-bottom: 0px; }
+  /* border:  1px solid #666;*/
+  /* border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;*/ }
+
+.mian_box2 > a:hover img {
+  margin-left: -10px;
+  opacity: 0.7; }
 
 .box1_ol {
   width: 180px;
@@ -1188,7 +1343,10 @@ a, li {
 
 .mian_box2 > a {
   display: inline-block;
-  width: 275px;
+  width: 281px;
   height: 162px;
-  border-right: 1px solid #666;
-  border-bottom: 1px solid #666; }
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+  .mian_box2 > a img {
+    display: block;
+    width: 280px; }

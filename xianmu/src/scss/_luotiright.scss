@@ -2,17 +2,53 @@
 
 #stairs_right{
   position: fixed;
-  width: 54px;
-  right: 0px;
+  right:0px;
   top: 60%;
   z-index: 100;
-  background: #666;
-  ul li{
+  width: 54px;
+  text-align: right;
+  li{
+   position: absolute;
+    right: 0;
+    border-bottom: 1px solid #ccc;
+    background: #666;
+     opacity: 0.8;
+    width: 50px;
+    height: 54px;
+ text-align: right;
+  }
+  .weixin{
+    position: relative;
+  }
+  .erweima{
+   visibility: hidden;
+    position: absolute;
+    left: -151px;
+    top: -71px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+  }
+  .weixin:hover .erweima{
+     visibility: visible;
+    opacity: 1;
+  }
+.QQa{
+    overflow: hidden;
+
     width: 54px;
     height: 54px;
-    border-bottom: 1px solid #999;
-    opacity: 0.5;
+    position: relative;
+    line-height: 54px;
+    color: #fff;
+    img{
+      float: left;
     }
-  }
+   
+}
+}
 
 
+.huidaodingbu{
+display: none;
+}

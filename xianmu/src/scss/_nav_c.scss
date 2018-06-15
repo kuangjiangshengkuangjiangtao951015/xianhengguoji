@@ -36,6 +36,7 @@
   width: 240px;
   height: 41px;
   background: red;
+
 }
 .nav .nav_da b{
   background: url("../img/hot.gif") no-repeat center ;
@@ -45,23 +46,7 @@
   background: url("../img/new.gif") no-repeat center ;
   margin: 0 5px;
 }
-.nav_ali{
-   background: #CCCCCC;
-   text-align: left;
-   text-indent: 10px;
-   opacity: 0.7;
-   font-size: 14px;
-   position: relative;
-  z-index: 5555;
 
-}
-.nav_ali>li:hover{
-   color: red;
-  text-indent: 20px;
-  background: #666666;
-  transition: all 1s;
-
-}
 .nav>ol>li>a:hover{
   color:#ff0099;
 }

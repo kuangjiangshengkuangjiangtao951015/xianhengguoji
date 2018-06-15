@@ -11,13 +11,13 @@
    <!--登录页面的头部-->
    <div class="atu">
        <div class="atu_center">
-              <a href="#" class="atu_left"><img src="../img/logo.png"/> </a>
+              <a href="index.html" class="atu_left"><img src="../img/logo.png"/> </a>
 
            <ul class="atu_right">
                <li>欢迎光临咸亨国际商城</li>
                <li>
-                   <a href="http://localhost:63342/www/suib/zijide/da1/scss/dengl.html?_ijt=a5ee9mcqnc8nv5mk85q1kdujbo" style="color: red">登录</a>
-                   <a href="#">注册</a>
+                   <a href="#" style="color: red">登录</a>
+                   <a href="zhuce.html">注册</a>
                </li>
                <li>
                     <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
@@ -33,16 +33,19 @@
               <img src="../img/login_pic_left.jpg">
           </div>
           <div class="repat_forma">
+              <form>
               <H4>会员登录</H4>
-             <div class="input_a"><b></b><input type="text" placeholder="手机/用户名"/></div>
-              <div class="input_b"><b></b><input type="password" placeholder="密码"/></div>
+                  <div id="error"></div>
+             <div class="input_a"><b></b><input type="text" placeholder="手机/用户名" id="username" name="username"/></div>
+              <div class="input_b"><b></b><input type="password" placeholder="密码" id="password" name="password"/></div>
              <div class="input_c"><span>忘记密码？</span></div>
-             <div class="but_a aa"><a href="#">登&nbsp;&nbsp;录</a> </div>
-             <div class="but_b aa"><a href="#">用户会员注册</a> </div>
+
+                  <div class="but_a aa"><a href="#" class="butt">登录</a></div>
+
+             <div class="but_b aa"><a href="http://localhost:63342/www/xianhengguoji/xianmu/src/html/zhuce.html?_ijt=f5kpdoasebp0ijhp365oobhbf3">用户会员注册</a> </div>
              <div class="but_c aa"><a href="#">供应链会员注册</a> </div>
-             <div class="but_d"><a href="#">什么是供应商链？</a> </div>
-
-
+             <div class="but_d"><a href="http://localhost:63342/www/xianhengguoji/xianmu/src/html/zhuce.html?_ijt=f5kpdoasebp0ijhp365oobhbf3">什么是供应商链？</a> </div>
+              </form>
              </div>
       </div>
    </div>
@@ -103,29 +106,36 @@
 
    </div>
  <!--右边楼梯-->
-  </div>
    <div id="stairs_right">
        <ul>
-           <li>
-               <div class="QQ">
-                   <img src="../img/side_icon04.gif">
-               </div>
+           <li >
+               <a href="#" class="QQa">
+                   <div >
+                       <img src="../img/side_icon04.gif">
+                       <!--<span>客户一</span>-->
+                       客户一热线
+                   </div>
+               </a>
            </li>
-           <li>
-               <div class="">
-                   <img src="../img/side_icon04.gif">
-               </div>
-           </li>
-           <li>
-               <div class="">
-                   <img src="../img/side_icon06.png">
-               </div>
-           </li>
-           <li>
-               <div class="">
-                   <img src="../img/side_icon05.png">
+           <br><br><br>
 
-               </div>
+
+           <li>
+               <a href="#">
+                   <div class="weixin">
+                       <img src="../img/side_icon06.png">
+                       <img src="../img/shared_erweima.jpg" class="erweima"/>
+                   </div>
+               </a>
+           </li>
+           <br><br><br>
+           <li class="huidaodingbu">
+               <a href="#">
+                   <div class="">
+                       <img src="../img/side_icon05.png">
+                       <span></span
+                   </div>
+               </a>
            </li>
        </ul>
    </div>
@@ -133,6 +143,10 @@
    <div id="footer">
        <img src="../img/qqq.bmp" />
    </div>
+   <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script type="text/javascript" src="../js/dengl.js"></script>
+  <script type="text/javascript" src="../js/index.js"></script>
+  <!-- <script type="text/javascript" src="../js/zhuc.js"></script>-->
 </body>
 </html>
 

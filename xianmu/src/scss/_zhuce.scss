@@ -238,7 +238,6 @@
 }
 
 #form_mian .form_h{
-
   margin-bottom: 15px;
   overflow: hidden;
   >.yzm_a{
@@ -249,16 +248,19 @@
     >input{
       width: 172px;
     }
-
+   
   }
-  >.yzm_b{
+  
+}
+.form_h > .yzm_b {
     float: left;
     width: 142px;
     line-height: 42px;
     height: 42px;
-    background: #666666;
+    background: #CCFF99;
     text-align: center;
-  }
+    font-size: 30px;
+    font-style: italic;
 }
 #form_mian .form_i{
 
@@ -272,9 +274,9 @@
     >input{
       width: 172px;
     }
-
+    
   }
-  >.yzm_b{
+  >.yzm_bb{
     float: left;
     width: 142px;
     line-height: 42px;
@@ -282,6 +284,7 @@
     background: #ccc;
     color: red;
     text-align: center;
+   
   }
 }
 #form_mian .form_j{
@@ -295,19 +298,39 @@
   }
 }
 .form_k{
-
-
-  >a{
+  >.form_submit{
+    width: 385px;
+    height: 42px;
+    background: #e50012;
     text-align: center;
     font-size: 20px;
     line-height: 42px;
     width: 385px;
     height: 42px;
     display: block;
-    background: #e50012;
+
     color: #fff;
     margin-bottom: 10px;
   }
+
+  >a{
+
+  }
+}
+
+#form_mian .form_k .form_submit{
+  width: 385px;
+  height: 42px;
+  background: #e50012;
+  text-align: center;
+  font-size: 20px;
+  line-height: 42px;
+  width: 385px;
+  height: 42px;
+  display: block;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 10px
 }
 .form_m{
   overflow: hidden;

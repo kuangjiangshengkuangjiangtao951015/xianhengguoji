@@ -2,16 +2,20 @@
 
 #stairs_left{
   position: fixed;
-  left: 50%;
-  margin-left: -630px;
+  left: 2px;
   top: 160px;
-  ul li{
-    line-height: 30px;
-    border-bottom: 2px dotted #abcdef;
-    a{
-      display: block;
-      padding-bottom: 3px;
-      color: #abcdef;
+  display: none;
+  ul{
+    li{
+      line-height: 30px;
+      border-bottom: 1px dotted #666;
+      color: #666;
     }
   }
+};
+.yanse{
+  background: red;
+}
+#stairs_left li:hover{
+background: red;
 }

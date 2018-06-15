@@ -1,0 +1,249 @@
+@charset "utf-8";
+.not{
+   width: 100%;
+  .not_ceng{
+    width: 1000px;
+    height: 85px;
+    margin: 0 auto;
+    background: #fff;
+  }
+}
+.not_logo{
+   float: left;
+   margin: 15px 0 0 -100px;
+
+}
+.not_span{
+  float: right;
+  b{
+     margin-top: 20px;
+    display: block;
+    width: 675px;
+    height:20px ;
+    background: url("../img/step_2.png");
+  }
+  span{
+    float: left;
+    display: block;
+    width: 225px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    font-family: '微软雅黑';
+  }
+}
+.mei_deng{
+  width: 1082px;
+   height: 38px;
+  margin: auto;
+   margin-top: 10px;
+  background: #ccc;
+ line-height: 38px;
+  font-size: 14px;
+  color: #666;
+  > i{
+    margin-left: 15px;
+     background: url("../img/tanhao.png") no-repeat center;
+  }
+  a{
+    margin-left: 10px;
+    background: red;
+    color: #fff;
+    font-size: 14px;
+  }
+}
+.shopping_span{
+  width: 1082px;
+  margin: auto;
+  color: red;
+  margin-top: 25px;
+  >span{
+    display: inline-block;
+    width: 100px;
+    height: 42px;
+    border: 1px solid #ccc;
+    line-height: 42px;
+    text-align: center;
+    border-top: 2px solid red;
+    border-bottom:none;
+
+  }
+}
+.shopping_ul{
+  width: 1082px;
+  height: 40px;
+  background: #fff;
+  margin: auto;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+
+  li{
+     float: left;
+    margin-left: 15px;
+    font-size: 14px;
+    color: #666;
+  }
+}
+
+.stp_a{
+   width:10px ;
+}
+
+.stp_b{
+  width:105px ;
+}
+.stp_c{
+  width:200px ;
+}
+
+.stp_d{
+  width:140px ;
+}
+
+.stp_e{
+  width:135px ;
+}
+
+.stp_f{
+  width:100px ;
+}
+
+.stp_g{
+  width:95px ;
+}
+
+.stp_h{
+  width:100px ;
+}
+.stp_i{
+  width:35px ;
+}
+
+.money{
+  width: 1080px;
+  margin: auto;
+  margin-top: 100px;
+  background: #CCCCCC;
+  height: 45px;
+  text-align: right;
+  line-height: 45px;
+  margin-bottom: 50px;
+  a{
+    background: #e50112;
+    color: #fff;
+    display: inline-block;
+    height: 45px;
+    width: 130px;
+    text-align: center;
+
+  }
+  b{
+    color: red;
+  }
+  strong{
+    color: red;
+    margin-right: 15px;
+  }
+}
+.shopping_cp{
+  width: 1080px;
+
+  height: 200px;
+  margin: auto;
+  ul>li{
+    background: #CCCCCC;
+    float: left;
+    height: 100px;
+
+
+  }
+}
+.wupin_a{
+   padding-left: 15px;
+  padding:12px 10px;
+
+  font-size: 14px;
+  color: #666666;
+}
+.wupin_b{
+  >img{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+
+  }
+}
+.wupin_c{
+  padding:12px 10px;
+  width: 150px;
+  font-size: 14px;
+  color: #666666;
+}
+.wupin_d{
+  padding:12px 10px;
+  width: 140px;
+  font-size: 14px;
+  color: #666666;
+}
+.wupin_e{
+  padding:12px 10px;
+  width: 177px;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+}
+.wupin_f{
+  padding:12px 10px;
+  width: 72px;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+}
+
+.wupin_g{
+  padding:12px 10px;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+  .input_aww{
+    width: 15px;
+  }
+  .input_bww{
+    width: 33px;
+    text-align: center;
+  }
+  .input_cww{
+    width: 15px;
+  }
+}
+.wupin_h{
+  padding:12px 10px;
+  width: 107px;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+}
+.wupin_i{
+  padding:12px 10px;
+  width: 74px;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+  span{
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  b{
+    font-weight: normal;
+    cursor: pointer;
+  }
+}
+.wupin_i span:hover{
+   color: red;
+}
+.wupin_i b:hover{
+  color: red;
+}

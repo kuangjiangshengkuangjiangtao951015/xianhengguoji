@@ -9,6 +9,7 @@
 @import "login";/*登录页面*/
 @import "foot-top";/*登录页面*/
 @import "zhuce";/*注册页面*/
+@import "shopping";/*购物车页面*/
 
 /*热门品牌*/
 
@@ -21,6 +22,7 @@
     width: 1190px;
     height: 253px;
     margin: auto;
+    overflow: hidden;
 
   }
 }
@@ -35,37 +37,53 @@
   border:1px solid #ccc;
   border-top: none;
   position: relative;
-  overflow: hidden;
+
   .hot_boxa{//流动图1号
     width: 1920px;
     height: 213px;
     background: #fff;
     position: absolute;
-    ul>li{
-      margin: 8px 10px;
-      width: 140px;
-      height: 55px;
-      text-align: center;
-
-      float: left;
+    ul{
+      overflow: hidden;
     }
+    ul>li{
+      margin: 5px 10px;
+      width: 140px;
+      height: 60px;
+      float: left;
+      vertical-align: bottom;
+      cursor: pointer;
 
+    }
   }
-  .hot_boxb{//流动图2号
+.hot_boxa ul li:hover{
+     vertical-align: top;
+     box-shadow: 0 10px 10px #666666;
+      width: 140px;
+  }
+
+
+ .hot_boxb{//流动图2号
     width: 1920px;
     height: 213px;
     background: #fff;
     position: absolute;
     left: 1192px;
+    /*visibility: hidden;*/
     ul>li{
       margin: 8px 10px;
       width: 140px;
       height: 55px;
       text-align: center;
-
       float: left;
+      cursor: pointer;
     }
   }
+}
+.hot_boxb ul li:hover{
+  vertical-align: top;
+  box-shadow: 0 10px 10px #666666;
+  width: 140px;
 }
 .si_img{/*流动图下面的四张图*/
   width: 1195px;
@@ -108,20 +126,23 @@
   width: 340px;
   height: 327px;
   position: relative;
-  border: 1px solid #666;
-  border-right:0;
+
+  border-right:1px solid #ccc;
   border-bottom: 0px;
 }
 .mian_box2{
   float: right;
   width: 856px;
   height: 326px;
-  border: 1px solid #666;
-  border-right:0;
-  border-bottom: 0px;
+ /* border:  1px solid #666;*/
+ /* border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;*/
 
 }
-
+.mian_box2>a:hover img{
+  margin-left: -10px;
+  opacity: 0.7;
+}
 .box1_ol{
 
   width: 180px;
@@ -149,8 +170,8 @@
   display: inline-block;
   width: 281px;
   height: 162px;
-  border-right: 1px solid #666;
-  border-bottom: 1px solid #666;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   img{
     display: block;
     width: 280px;
